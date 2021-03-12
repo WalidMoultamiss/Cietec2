@@ -41,14 +41,14 @@ body .loginform .text h1 {
   font-family: "Segoe UI";
   font-size: 25;
   font-weight: bold;
-  color: #e0d6e3;
+  color: #ffffff;
 }
 
 body .loginform .text h4 {
   font-family: "Segoe UI";
   font-size: 14;
   font-weight: Regular;
-  color: #e0d6e3;
+  color: #ffffff;
 }
 
 body .loginform .input {
@@ -67,7 +67,11 @@ body .loginform .input .remember {
 body .loginform .input .remember .checkbox {
   width: 22px;
   height: 22px;
-  background: transparent;
+}
+
+body .loginform .input .remember input:checked ~ .checkmark {
+  background-image: -webkit-gradient(linear, left top, right top, from(red), to(yellow));
+  background-image: linear-gradient(to right, red, yellow);
 }
 
 body .loginform .input label {
@@ -110,5 +114,10 @@ body #btnLogin {
   background: linear-gradient(to right, #3b5e1c 0%, #77bc38 100%);
   margin-left: 0px;
   cursor: pointer;
+}
+
+.container input:checked ~ .checkmark {
+  background-image: -webkit-gradient(linear, left top, right top, from(red), to(yellow));
+  background-image: linear-gradient(to right, red, yellow);
 }
 /*# sourceMappingURL=login.css.map */

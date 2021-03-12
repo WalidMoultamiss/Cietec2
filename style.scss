@@ -45,7 +45,7 @@ h6 {
 }
 
 p {
-  @include fontSegoe(7px);
+  @include fontSegoe(10px);
 }
 
 body {
@@ -124,10 +124,31 @@ body {
   border-radius: 2px;
 }
 
+#dropUpmenu{
+  transform: rotate(180deg)
+}
+
 .divHolder {
   display: flex;
   flex-direction: column;
   margin-left: 11vw;
+}
+
+.rightMenuNav{
+  width: 35px;
+  height:  35px;
+  position: relative;
+}
+
+.dropOpen{
+  width: 35px;
+  height:  35px;
+  @include flex(center);
+  background-color: $BGprimary;
+  border-radius: 2px;
+  #dropOpenImg{
+    width: 14px;
+  }
 }
 
 .navBar {
@@ -223,6 +244,9 @@ body {
   justify-content: flex-end;
   width: 100%;
 }
+
+
+
 
 .upcoming {
   width: 121px;
@@ -502,11 +526,12 @@ $breakpoint: 768px; //Iphone X
   }
 
   .rightMenu {
+    position: absolute;
+    top: 0;
     width: 41px;
-    height: 264px;
+    height: 262px;
     @include flex(center, flex-end, column);
     gap: 20px;
-    padding-top: 202px;
     img{
       margin-right: 12px;
     }
@@ -535,10 +560,6 @@ $breakpoint: 768px; //Iphone X
   .supportRSP{
     margin-right: -2px;
   }
-
-
-
-
 
 
 }

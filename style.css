@@ -56,7 +56,7 @@ h6 {
 p {
   font-family: "Segoe UI";
   font-weight: bold;
-  font-size: 7px;
+  font-size: 10px;
   text-align: left;
   color: white;
 }
@@ -179,6 +179,11 @@ body .dashboard img #logo {
   border-radius: 2px;
 }
 
+#dropUpmenu {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
 .divHolder {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -188,6 +193,36 @@ body .dashboard img #logo {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-left: 11vw;
+}
+
+.rightMenuNav {
+  width: 35px;
+  height: 35px;
+  position: relative;
+}
+
+.dropOpen {
+  width: 35px;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #2a2b31;
+  border-radius: 2px;
+}
+
+.dropOpen #dropOpenImg {
+  width: 14px;
 }
 
 .navBar {
@@ -780,8 +815,10 @@ table tr {
             flex-direction: row;
   }
   .rightMenu {
+    position: absolute;
+    top: 0;
     width: 41px;
-    height: 264px;
+    height: 262px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -796,7 +833,6 @@ table tr {
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 20px;
-    padding-top: 202px;
   }
   .rightMenu img {
     margin-right: 12px;
