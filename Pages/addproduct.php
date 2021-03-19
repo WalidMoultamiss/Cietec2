@@ -10,17 +10,18 @@
 </head>
 
 <body>
+<form action="" method="POST">
     <div class="popup">
         <h1>Add Product</h1>
 <div class="popup1">
-    <div class="">
+    <div class="firstInputs">
         <div class="ref">
             <label for="text">References</label>
-            <input type="text" id="textref" placeholder="type here...">
+            <input type="text" id="textref" placeholder="type here..." name="reference">
         </div>
         <div class="namep">
             <label for="text">Name of product</label>
-            <input type="text" id="manep"  placeholder="type here...">
+            <input type="text" id="manep"  placeholder="type here..." name="nameP">
         </div>
     </div>
         <div id="Pimage">
@@ -32,29 +33,31 @@
         <div class="popup2">
             <div class="price">
                 <label for="text">Price</label>
-                <input type="text" id="textPrice"  placeholder="type here...">
+                <input type="text" id="textPrice"  placeholder="type here..." name="price">
             </div>
             <div class="quntite">
                 <label for="text">Quantite</label>
-                <input type="text" id="textQuantite" placeholder="type here...">
+                <input type="text" id="textQuantite" placeholder="type here..." name="quantiteP">
             </div>
             <div class="critiqueQ">
                 <label for="text">Critique Quantite</label>
-                <input type="text" id="textCQ"  placeholder="type here...">
+                <input type="text" id="textCQ"  placeholder="type here..." name="qritiqueQT">
             </div>
         </div>
         <div class="description">
             <label for="textarea">Description</label>
 
-            <textarea name="" id="textarea" cols="30" rows="10"  placeholder="type here..."></textarea >
+            <textarea name="" id="textarea" cols="30" rows="10"  placeholder="type here..." name="description"></textarea >
         </div>
         <div class="button">
             <input type="submit" value="Cancel" id="cancel">
-            <input type="submit" value="AddProduct">
+            <input type="submit" value="AddProduct" name="AddProduct">
         </div>
-
+        
 
     </div>
+    </form>
+    
     <script>
         var loadFile = function (event) {
             var output = document.getElementById('output');

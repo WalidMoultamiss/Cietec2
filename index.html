@@ -5,291 +5,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Cietec dashboard</title>
+    <title>Login</title>
+    <link rel="stylesheet" href="css/login.min.css">
 </head>
 
 <body>
-    <div class="dashboard">
-        <div class="imgCenter">
-            <img id="logo" src="images/logo.png">
+    
+    <div class="loginform">
+        
+        <div class="logo">
+            <img src="images/logobig.png" alt="logo">
         </div>
-        <div class="dbMenu">
-            <img src="images/Dbchart.svg">
-            <img src="images/Maps.svg">
-            <img src="images/Shopping.svg">
-            <img src="images/Messages.svg">
-            <img src="images/Files.svg">
+        <div class="text">
+            <h1>Login</h1>
+            <h4>Please login to your account</h4>
         </div>
-    </div>
-    <div class="divHolder">
-        <div class="respNavbar">
-            <div class="respNavbarHldr">
-                <div class="brgrMenu">
-                    <img src="images/brgrMenu.svg" alt="brgrMenu">
-                </div>
-                <h2 id="RDashboard">dashboard</h2>
-                <div class="rightMenuNav">
-                    <div class="dropOpen">
-                        <img id="dropOpenImg"   src="images/drop_down.svg" alt="dropDownMenu">
-                    </div>
-                    <div class="rightMenu">
-                        <div class="searchRSP">
-                            <div class="search">
-                                <input type="text" id="searchInput" placeholder="Search">
-                                <img src="images/search.svg">
-                            </div>
-                        </div>
-                        <div class="notificationRSP">
-                            <img src="images/notificationON.svg" alt="notification">
-                        </div>
-                        <div class="userRSP">
-                            <img src="images/signUP.svg" alt="signUP">
-                        </div>
-                        <div class="supportRSP">
-                            <img src="images/support.svg" alt="support" style="margin-left: 11px;">
-                        </div>
-                        <img id="dropUpmenu" src="images/dropDownMenu.svg" alt="drop_down_Menu">
-                    </div>
-                </div>
+        <div class="input">
+            <div class="username">
+                <input type="text" id="usernameId" placeholder="User name">
+                <img id="userImg" src="images/Icon feather-user.svg" alt="">
             </div>
-        </div>
-        <div class="navBar">
-            <h1 id="DbText">dashboard</h1>
-            <div class="searchDiv">
-                <div class="search">
-                    <input type="text" id="searchInput" placeholder="Search">
-                    <img src="images/search.svg">
-                </div>
-                <img src="images/sortBy.svg">
+            <div class="password">
+                <input type="password" id="passwordId" placeholder="Password">
             </div>
-            <div class="support">
-                <img src="images/support.svg" alt="support" style="margin-left: 11px;">
-                <h4 style="margin-right: 17px;">Support</h4>
+            <div class="remember">
+                <input type="checkbox" class="checkbox">
+                <label for="checkbox">Remember me</label>
             </div>
-            <div class="userDiv">
-                <h4>user name</h4>
-                <img src="images/signUP.svg" alt="signUP">
-                <img src="images/notificationON.svg" alt="notification">
-            </div>
-        </div>
-        <h4 style="width: 87vw;margin-top: 50px; margin-bottom: 20px;">Overview</h4>
-        <div class="statistics">
-            <div class="news">
-                <div class="texts">
-                    <h2>Welcome back Julie</h2>
-                    <h3>Since your last login on the system, there were:</h3>
-                    <h4>21 new charts</h4>
-                    <h4>15 new reports</h4>
-                    <h4>45 new Messages</h4>
-                </div>
-                <div class="undrawFile">
-                    <img src="images/undraw_file_analysis_8k9b.svg" alt="undraw_file_analysis_8k9b">
-                </div>
-            </div>
-
-            <div class="upcoming">
-                <div class="textUpComming">
-                    <h6>upcoming</h6>
-                    <div class="todayCont">
-                        <p>Today</p>
-                        <span><img src="images/drop_down.svg" alt="drop_down"></span>
-                    </div>
-                </div>
-                <div class="event">
-                    <img src="images/eventColor.svg" alt="eventColor">
-                    <span>
-                        <h6>Team meeting</h6>
-                        <p>10 AM - 11 AM</p>
-                    </span>
-                </div>
-                <div class="event">
-                    <img src="images/eventRed.svg" alt="eventColor">
-                    <span>
-                        <h6>Team meeting</h6>
-                        <p>10 AM - 11 AM</p>
-                    </span>
-                </div>
-                <div class="event">
-                    <img src="images/eventprpl.svg" alt="eventColor">
-                    <span>
-                        <h6>Team meeting</h6>
-                        <p>10 AM - 11 AM</p>
-                    </span>
-                </div>
-                <div class="moreContainer"><img src="images/MoreButton.svg" alt="MoreButton"></div>
-            </div>
-            <div class="upcoming2">
-                <h6 style="display: flex;">Total inventory usage<span id="option"><img src="images/option.svg"
-                            alt="option"></span></h6>
-                <svg id="crcls">
-                    <circle cx="42px" cy="42px" r="42px"></circle>
-                    <circle cx="42px" cy="42px" r="42px"></circle>
-                </svg>
-                <h3>70%</h3>
-                <div class="statIvtr">
-                    <div id="frst"></div>
-                    <p class="txtStat">218 items</p>
-                    <div id="scnd"></div>
-                    <p class="txtStat">32 are left</p>
-                </div>
-            </div>
-        </div>
-        <div id="txtInventory">
-            <div style="display: flex;align-items: baseline;">
-                <h4 style="font-size: 25px;">218</h4>
-                <p style=" font-size: 14px; margin-left: 0.5vw;"> products are in the inventory</p>
-            </div>
-            <button class="addProduct">
-                <img src="images/add-box.svg" alt="add-box">
-                <h4>add product</h4>
-            </button>
-        </div>
-        <div class="tableHolder">
-            <table>
-                <tr>
-                    <th>Menu</th>
-                    <th>Reference</th>
-                    <th>Name of the product</th>
-                    <th>Peaces</th>
-                    <th>Description</th>
-                    <th>Price</th>
-                    <th></th>
-                    </tr)>
-                <tr class="devider">
-                </tr>
-                <tr>
-                    <td><img id="testMenu2" src="images/testMenu2.svg" alt=""><img src="images/option.svg" alt="option">
-                    </td>
-                    <td>2JH23JH23</td>
-                    <td>transistor PNP</td>
-                    <td>120 pcs</td>
-                    <td>transistor description...</td>
-                    <td>198,25 dh</td>
-                    <td>05:17 08 dec 2021</td>
-                </tr>
-                <tr class="devider">
-                </tr>
-                <tr>
-                    <td><img src="images/option.svg" alt="option"></td>
-                    <td>2JH23JH23</td>
-                    <td>transistor PNP</td>
-                    <td>120 pcs</td>
-                    <td>transistor description...</td>
-                    <td>198,25 dh</td>
-                    <td>05:17 08 dec 2021</td>
-                </tr>
-                <tr class="devider">
-                </tr>
-                <tr>
-                    <td><img src="images/option.svg" alt="option"></td>
-                    <td>2JH23JH23</td>
-                    <td>transistor PNP</td>
-                    <td>120 pcs</td>
-                    <td>transistor description...</td>
-                    <td>198,25 dh</td>
-                    <td>05:17 08 dec 2021</td>
-                </tr>
-                <tr class="devider">
-                </tr>
-                <tr>
-                    <td><img src="images/option.svg" alt="option"></td>
-                    <td>2JH23JH23</td>
-                    <td>transistor PNP</td>
-                    <td>120 pcs</td>
-                    <td>transistor description...</td>
-                    <td>198,25 dh</td>
-                    <td>05:17 08 dec 2021</td>
-                </tr>
-                <tr class="devider">
-                </tr>
-                <tr>
-                    <td><img src="images/option.svg" alt="option"></td>
-                    <td>2JH23JH23</td>
-                    <td>transistor PNP</td>
-                    <td>120 pcs</td>
-                    <td>transistor description...</td>
-                    <td>198,25 dh</td>
-                    <td>05:17 08 dec 2021</td>
-                </tr>
-                <tr class="devider">
-                </tr>
-                <tr>
-                    <td><img src="images/option.svg" alt="option"></td>
-                    <td>2JH23JH23</td>
-                    <td>transistor PNP</td>
-                    <td>120 pcs</td>
-                    <td>transistor description...</td>
-                    <td>198,25 dh</td>
-                    <td>05:17 08 dec 2021</td>
-                </tr>
-                <tr class="devider">
-                </tr>
-                <tr>
-                    <td><img src="images/option.svg" alt="option"></td>
-                    <td>2JH23JH23</td>
-                    <td>transistor PNP</td>
-                    <td>120 pcs</td>
-                    <td>transistor description...</td>
-                    <td>198,25 dh</td>
-                    <td>05:17 08 dec 2021</td>
-                </tr>
-                <tr class="devider">
-                </tr>
-                <tr>
-                    <td><img src="images/option.svg" alt="option"></td>
-                    <td>2JH23JH23</td>
-                    <td>transistor PNP</td>
-                    <td>120 pcs</td>
-                    <td>transistor description...</td>
-                    <td>198,25 dh</td>
-                    <td>05:17 08 dec 2021</td>
-                </tr>
-                <tr class="devider">
-                </tr>
-                <tr>
-                    <td><img src="images/option.svg" alt="option"></td>
-                    <td>2JH23JH23</td>
-                    <td>transistor PNP</td>
-                    <td>120 pcs</td>
-                    <td>transistor description...</td>
-                    <td>198,25 dh</td>
-                    <td>05:17 08 dec 2021</td>
-                </tr>
-                <tr class="devider">
-                </tr>
-                <tr>
-                    <td><img src="images/option.svg" alt="option"></td>
-                    <td>2JH23JH23</td>
-                    <td>transistor PNP</td>
-                    <td>120 pcs</td>
-                    <td>transistor description...</td>
-                    <td>198,25 dh</td>
-                    <td>05:17 08 dec 2021</td>
-                </tr>
-            </table>
+            <!-- <input id="btnLogin" href="http://localhost/Cietec/pages/dashboard.php"> -->
+            <a href="../pages/dashboard.php"><input type="submit" value="LOGIN" id="btnLogin" ></a>
         </div>
     </div>
 
-    <!--models-->
-    <div id="testModel">
-        <img src="images/testPopup.png" alt="">
-    </div>
-    <script>
-
-        document.querySelector("#txtInventory > button").addEventListener("click", function () {
-            document.querySelector("#testModel").style.display = "flex";
-        })
-
-        document.querySelector("#testModel").addEventListener("click", function () {
-            document.querySelector("#testModel").style.display = "none";
-        })
-
-
-        function dropDownMenu() {
-
-        }
-    </script>
 </body>
 
 </html>
